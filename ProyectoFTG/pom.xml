@@ -16,7 +16,10 @@
    <properties>
     <java.version>17</java.version>
 </properties>
-
+ <repository>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
 
     <dependencies>
         <dependency>
@@ -40,10 +43,11 @@
             <artifactId>thymeleaf-extras-springsecurity6</artifactId>
         </dependency>
  <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>5.3.10.RELEASE</version> <!-- Use a version compatible with Java 17 -->
-    </dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.3.11.RELEASE</version> <!-- Use the latest version available -->
+</dependency>
+
 <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
